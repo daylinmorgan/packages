@@ -1,0 +1,1 @@
+{"name":"strenc","url":"https://github.com/Yardanico/nim-strenc","method":"git","tags":["encryption","obfuscation","abandoned"],"description":"A library to automatically encrypt all string constants in your programs","license":"MIT","web":"https://github.com/Yardanico/nim-strenc"}

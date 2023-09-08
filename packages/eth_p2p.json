@@ -1,0 +1,1 @@
+{"name":"eth_p2p","url":"https://github.com/status-im/nim-eth-p2p","method":"git","tags":["deprecated","library","ethereum","p2p","devp2p","rplx","networking","whisper","swarm"],"description":"Deprecated implementation of the Ethereum suite of P2P protocols (now part of the 'eth' package)","license":"Apache License 2.0","web":"https://github.com/status-im/nim-eth-p2p"}

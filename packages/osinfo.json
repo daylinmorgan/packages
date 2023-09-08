@@ -1,0 +1,1 @@
+{"name":"osinfo","url":"https://github.com/nim-lang/osinfo.git","method":"git","tags":["os","library","info"],"description":"Modules providing information about the OS.","license":"MIT","web":"https://github.com/nim-lang/osinfo"}

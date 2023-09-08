@@ -1,0 +1,1 @@
+{"name":"eth_keyfile","url":"https://github.com/status-im/nim-eth-keyfile","method":"git","tags":["deprecated"],"description":"A deprecated library for handling Ethereum private keys and wallets (now part of the 'eth' package)","license":"Apache License 2.0","web":"https://github.com/status-im/nim-eth-keyfile"}
