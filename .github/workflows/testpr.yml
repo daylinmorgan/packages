@@ -11,7 +11,18 @@ jobs:
       - uses: iffy/install-nim@v3.2.2
         with:
           version: stable
+      - run: nim r -d:release generate_packages.nim
       - run: ./getmergebase.sh
       - run: nim r -d:ssl -d:release package_scanner.nim packages.json --old=packages_old.json --check-urls
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push updated packages.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add packages.json
+          git commit -m "updated packages.json"
+          git push
+
+
+
