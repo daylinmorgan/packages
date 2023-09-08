@@ -1,0 +1,12 @@
+{
+  "name": "tsm",
+  "url": "https://github.com/daylinmorgan/tsm",
+  "method": "git",
+  "tags": [
+    "tmux",
+    "cli"
+  ],
+  "description": "tmux session manager",
+  "license": "MIT",
+  "web": "https://github.com/daylinmorgan/tsm"
+}
