@@ -8,9 +8,14 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
+
       - uses: iffy/install-nim@v3.2.2
         with:
           version: stable
+
+      - name: Regenerate packages.json
+        run: nim r -d:release generate_packages.nim
+
       - run: ./getmergebase.sh
       - run: nim r -d:ssl -d:release package_scanner.nim packages.json --old=packages_old.json --check-urls
         env:
