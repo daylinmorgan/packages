@@ -1,0 +1,11 @@
+{
+  "name": "rlp",
+  "url": "https://github.com/status-im/nim-rlp",
+  "method": "git",
+  "tags": [
+    "deprecated"
+  ],
+  "description": "Deprecated RLP serialization library for Nim (now part of the 'eth' module)",
+  "license": "Apache License 2.0",
+  "web": "https://github.com/status-im/nim-rlp"
+}

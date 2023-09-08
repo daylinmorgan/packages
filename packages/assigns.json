@@ -1,0 +1,14 @@
+{
+  "name": "assigns",
+  "url": "https://github.com/metagn/assigns",
+  "method": "git",
+  "tags": [
+    "sugar",
+    "macros",
+    "unpacking",
+    "assignment"
+  ],
+  "description": "syntax sugar for assignments",
+  "license": "MIT",
+  "web": "https://metagn.github.io/assigns/assigns.html"
+}

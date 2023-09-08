@@ -1,0 +1,13 @@
+{
+  "name": "byteutils",
+  "url": "https://github.com/status-im/nim-byteutils",
+  "method": "git",
+  "tags": [
+    "library",
+    "blobs",
+    "hex-dump"
+  ],
+  "description": "Useful utilities for manipulating and visualizing byte blobs",
+  "license": "Apache License 2.0",
+  "web": "https://github.com/status-im/nim-byteutils"
+}
