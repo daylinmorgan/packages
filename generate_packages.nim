@@ -1,14 +1,16 @@
-import std/[json, os]
+import std/[algorithm, json, os, sequtils]
 
 
 proc createPackagesJson(packagesDir: string, packagesJsonFile: string) =
   var packagesJson = newJArray()
-  for packageFile in walkDir(packagesDir):
-    let packageJson = parseJson(readFile(packageFile.path))
+  var packageFiles = sorted(toSeq(walkDir(packagesDir)))
+
+
+  for (_,path) in packageFiles:
+    let packageJson = parseJson(readFile(path))
     packagesJson.add packageJson
 
   writeFile(packagesJsonFile, pretty(packagesJson))
-
 
 when isMainModule:
   createPackagesJson("packages", "packages.json")
